@@ -1,0 +1,19 @@
+{
+  "name": "skillorbit-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "test": "node --test app.test.js validation.test.js",
+    "db:migrate": "node migrate.js",
+    "db:seed": "node seed.js",
+    "test:integration": "node --test app.integration.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.23.1"
+  }
+}
